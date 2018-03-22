@@ -1,0 +1,332 @@
+@media screen and (min-width: 640px) {
+	.section {
+		width: 100%;
+		overflow: hidden;
+		padding-top: 80px;
+		background: #FCFDFE;
+	}
+	/*------------- banner start -----------*/
+	.banner {
+		width: 100%;
+		height: 500px;
+		background: url(../../common/img/solution-banner.png) center center no-repeat;
+		background-size: 1920px 500px;
+	}
+	/*------------- banner end -------------*/
+	.section-wrapper {
+		max-width: 1200px;
+		margin: 0 auto;
+	}
+	.section-wrapper-mobile {
+		display: none;
+	}
+	/*常见问题解答*/
+	.common-problem {
+		padding-top: 60px;
+	}
+	.common-problem .shadow {
+		display: block;
+		font-family: PingFangSC-Semibold;
+		font-size: 50px;
+		color: #EAEDF3;
+		line-height: 70px;
+		text-align: center;
+	}
+	.common-problem .title {
+		font-family: PingFangSC-Regular;
+		font-size: 48px;
+		color: #595B68;
+		line-height: 67px;
+		margin-top: -40px;
+		text-align: center;
+	}
+	.common-problem .txt {
+		font-weight: 300;
+		font-size: 18px;
+		color: #9DA3A9;
+		line-height: 25px;
+		margin-top: 20px;
+		text-align: center;
+	}
+	.common-problem-list {
+		margin-top: 35px;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+	.common-problem-list li {
+		opacity: 0;
+		width: 295px;
+		height: 295px;
+		margin: 15px 0;
+		position: relative;
+	}
+	.common-problem-list li img {
+		width: 100%;
+		height: 100%;
+	}
+	.common-problem-list li .txt-box {
+		width: 100%;
+		height: 140px;
+		opacity: 1;
+		transition: all .3s;
+		background: #FFFFFF;
+		box-sizing: border-box;
+		padding: 20px 13px 0 20px;
+		position: absolute;
+		bottom: 0;
+	}
+	.common-problem-list li .txt-box h3 {
+		font-family: PingFangSC-Semibold;
+		font-size: 20px;
+		color: #595B68;
+		line-height: 28px;
+	}
+	.common-problem-list li .txt-box p {
+		font-family: PingFangSC-Regular;
+		font-size: 14px;
+		color: #9DA3A9;
+		margin-top: 10px;
+	}
+	.common-problem-list li .txt-box a {
+		font-family: PingFangSC-Semibold;
+		font-size: 12px;
+		color: #595B68;
+		line-height: 16px;
+		position: absolute;
+		bottom: 13px;
+		right: 13px;
+	}
+	.common-problem-list li .show-box {
+		opacity: 0;
+		width: 100%;
+		height: 100%;
+		transition: all .3s;
+		position: absolute;
+		top: 0;
+		left: 0;
+		background: rgba(47, 44, 40, .6);
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+	.common-problem-list li .show-box h3 {
+		font-family: PingFangSC-Semibold;
+		font-size: 20px;
+		color: #FFFFFF;
+		line-height: 28px;
+	}
+	.common-problem-list li .show-box p {
+		font-family: PingFangSC-Regular;
+		font-size: 14px;
+		color: #FFFFFF;
+		line-height: 20px;
+		text-align: center;
+		padding: 0 20px;
+		margin-top: 10px;
+	}
+	.common-problem-list li .show-box a {
+		font-family: PingFangSC-Semibold;
+		font-size: 12px;
+		color: #FFFFFF;
+		line-height: 17px;
+		margin-top: 40px;
+		position: initial;
+	}
+	.common-problem-list li:hover .show-box {
+		opacity: 1;
+	}
+	.common-problem-list li:hover .txt-box {
+		opacity: 0;
+	}
+	/*------------- cooperative-partner start -------------*/
+	.cooperative-partner {
+		margin-top: 120px;
+		padding-bottom: 145px;
+	}
+	.cooperative-partner h2 {
+		font-family: PingFangSC-Semibold;
+		font-size: 24px;
+		color: #4A4A4A;
+		line-height: 33px;
+		text-align: center;
+	}
+	.cooperative-partner-company {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: row;
+	}
+	.cooperative-partner-company li {
+		width: 180px;
+		height: 115px;
+		margin: 65px 25px 0;
+		opacity: 0;
+	}
+	.cooperative-partner-company li img {
+		width: 100%;
+		height: 100%;
+	}
+	/*------------- cooperative-partner end -------------*/
+}
+
+@media screen and (max-width: 1200px) and (min-width: 640px) {
+	.common-problem-list {
+		justify-content: center;
+	}
+	.common-problem-list li {
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+	.cooperative-partner-meeting>li {
+		margin: 0 50px 50px;
+	}
+	.cooperative-partner-meeting>li:nth-child(n+3) {
+		margin: 0 50px 0;
+	}
+	.cooperative-partner-meeting {
+		align-items: center;
+		justify-content: center;
+	}
+	.cooperative-partner-company {
+		padding-left: 150px;
+		box-sizing: border-box;
+	}
+}
+
+
+
+
+@media screen and (max-width: 640px) {
+	.section {
+		width: 100%;
+		overflow: hidden;
+		padding-top: 50px;
+		background: #FCFDFE;
+		box-sizing: border-box;
+	}
+	.section-wrapper-mobile {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+	}
+	.section-wrapper-mobile .mobile-content{
+		padding-bottom: 30px;
+	}
+	.mobile-nav {
+		height: 100px;
+		width: 100%;
+		overflow-x: auto;
+		-webkit-overflow-scrolling: touch;
+	}
+	.mobile-nav::-webkit-scrollbar {
+		display: none;
+	}
+	.mobile-nav ul {
+		width: 420px;
+		padding: 17px 15px 28px;
+		box-sizing: border-box;
+		height: 100%;
+		display: flex;
+		flex-direction: row;
+	}
+	.mobile-nav ul li {
+		display: inline-block;
+		transition: all .3s;
+		width: 55px;
+		height: 55px;
+		border-radius: 50%;
+		margin-right: 12px;
+		background: #FCFDFE;
+		box-sizing: border-box;
+		border: 1px solid #D8D8D8;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-family: PingFangSC-Semibold;
+		font-size: 12px;
+		color: #8B8B8B;
+		position: relative;
+	}
+	.mobile-nav ul li:last-child {
+		margin-right: 0;
+	}
+	.mobile-nav ul li.select {
+		border: 1px solid #4D92E2;
+		color: #4D92E2;
+	}
+	.mobile-nav ul li i {
+		display: none;
+		transition: all .3s;
+		width: 12px;
+		height: 9px;
+		background: url(../../common/img/Current-direction-blue.png);
+		background-size: cover;
+		position: absolute;
+		top: -20px;
+		left: 0;
+		right: 0;
+		margin: auto;
+	}
+	.mobile-nav ul li.select i {
+		display: block;
+	}
+	.mobile-content ul,
+	.mobile-content ul li {
+		width: 100%;
+		height: 100%;
+	}
+	.mobile-content ul {
+		overflow: hidden;
+	}
+	.mobile-content ul li {
+		display: none;
+	}
+	.mobile-content ul li:first-child {
+		display: block;
+	}
+	.mobile-content-banner {
+		width: 100%;
+		height: 220px;
+		overflow: hidden;
+		position: relative;
+	}
+	.mobile-content-banner img {
+		width: 100%;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		margin: auto;
+	}
+	.mobile-content-txt {
+		padding: 25px 25px 0;
+	}
+	.mobile-content-txt h3 {
+		text-align: center;
+		font-family: PingFangSC-Semibold;
+		font-size: 16px;
+		color: #4A4A4A;
+		line-height: 24px;
+	}
+	.mobile-content-txt span {
+		display: block;
+		width: 20px;
+		height: 1.5px;
+		background: #4A4A4A;
+		margin: 15px auto 15px;
+	}
+	.mobile-content-txt p {
+		font-family: PingFangSC-Regular;
+		font-size: 14px;
+		color: #8B8B8B;
+		line-height: 22px;
+	}
+	.banner,
+	.section-wrapper,
+	.cooperative-partner,
+	.footer {
+		display: none;
+	}
+}
